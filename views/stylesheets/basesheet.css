@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --bgc: #ab7b4f;
+  --title-size: 24px;
+  --general_font: Chakra Petch, sans-serif;
+  --data-font-size: clamp(1vw, 1.2vw, 2vw);
+  --text-size: 16px;
+  --general-pd: 10px;
+  --light-font-color: beige;
+  --dark-font-color: #511515;
+  /*Buttons*/
+  --btn-br: 20px;
+  
+  /*Tables*/
+  --table-mg: auto;
+  --table-bw: 2px;
+  --table-br: 5px;
+  --table-bgc: #511515;
+  --table-bs: solid;
+  
+  /*Logins and menus*/
+  --darker-div-bgc: #815225;
+  --darker-div-filter: drop-shadow(black .2rem .2rem 5px);
+  --login-menu-filter: drop-shadow(black .2rem .2rem 5px);
+  --login-menu-bgc: #b99069;
+  --gabi-logo-menu-width: 40vh;
+}
+
+/*Elementos estruturais textuais*/
+html {
+  font-family: var(--general_font);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  background-color: var(--bgc);
+}
+
+h1 {
+  font-size: 1rem;
+  margin: 0px;
+}
+
+h2 {
+  font-size: .8rem;
+  margin: 0px;
+}
+
+ul {  
+  list-style-type: none;
+  font-size: 1rem;
+  text-align: left;
+}
+
+footer {
+  font: bold 15px "Chakra Petch", sans-serif;
+  color: var(--light-font-color);
+  background-color: var(--darker-div-bgc);
+  padding: var(--general-pd);
+  margin: 1rem;
+  border-radius: 0px 0px 50px 50px;
+  filter: var(--darker-div-filter);
+}
+
+/*----- Forms in General ----- */
+input, select {
+  font-family: Chakra Petch, sans-serif;
+  font-size: 1.1rem;
+  margin: .5rem auto .5rem auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#radio fieldset{
+  padding: 0px;
+  margin: 5px;
+  font-weight: bold;
+  color: var(--light-font-color);
+  background-color: var(--darker-div-bgc);
+  filter: var(--darker-div-filter);
+}
+
+.search_disclaimer{
+  font-family: Chakra Petch, sans-serif;
+  font-size: .8rem;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*----- Page Buttons in General ----- */
+.back_buttons {
+  font-family: Chakra Petch, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--light-font-color);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border-radius 0.5s ease, filter 0.7s ease;
+}
+
+.back_buttons:hover {
+  border-radius: 50px;
+  filter: brightness(0.8);
+}
+
+#logout_button {
+  background-color: var(--dark-font-color);
+  margin-bottom: 20px;
+}
+
+#back_to_menu_button {
+  background-color: #024e58;
+  margin: 5px;
+}
+
+#back_to_search_button {
+  background-color: var(--dark-font-color);
+  margin: 5px;
+}
+
+#back_to_register_button{
+  background-color: var(--dark-font-color);
+  margin: 5px;
+}
+
+/* ----- Gabi Logo ----- */
+.gabi_logo{
+  filter: drop-shadow(grey .2rem .2rem 5px);;
+  margin: 0px;
+  padding: 0px;
+}
+
+#gabi_logo_index {
+  max-height: 70%;
+  max-width: 70%;
+}
+
+#gabi_logo_login {
+  max-height: 80%;
+  max-width: 80%;
+}
+
+#gabi_logo_searching {
+  max-height: 60%;
+  max-width: 60%;
+}
+
+#gabi_logo_menu{
+  max-width: var(--gabi-logo-menu-width);
+}
+
+#gabi_logo_register,
+#gabi_logo_element_detail,
+#gabi_logo_result_list {
+  max-height: 70%;
+  max-width: 70%;
+}

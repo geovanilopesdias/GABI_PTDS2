@@ -1,0 +1,122 @@
+/* ----- Menu Sctructure ----- */
+#menu_grid{
+    display: grid;
+    margin: auto;
+    grid-template-columns: var(--gabi-logo-menu-width) 75vh;
+    grid-template-rows: auto auto 1fr;
+    margin: 1rem;
+    padding: .7em;
+    background-color: var(--login-menu-bgc);
+    border-radius: 50px 50px 0px 0px;
+    filter: var(--login-menu-filter);
+    border: 1px solid #ccc;
+}
+
+#logo{
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 10px;
+    align-self: center;
+}
+
+#greeting{
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    padding-right: 10px;
+    align-self: start;
+}
+
+#logout{
+    grid-column: 1;
+    grid-row: 3;
+    align-self: start;
+}
+
+#logo_for_book_register_options{
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    margin-top: 10px;
+    align-self: center;
+}
+
+#logout_for_book_register_options{
+    grid-column: 1;
+    grid-row: 3;
+    align-self: start;
+}
+
+
+#table{
+    margin: 10px;
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    overflow: hidden;
+}
+
+/* ----- Table Menu ----- */
+.menu_table {
+    margin: auto;
+    border-width: 5px 5px 10px 5px;
+    border-radius: 10px 10px 0px 0px;
+    border-color: #511515;
+    background-color: #511515;
+    border-style: solid;
+}
+
+.menu_table caption{
+    font-size: 2rem;
+}
+
+.super_label {
+    font-size: 1.5rem;
+}
+
+.sub_labels {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.description_labels {
+    padding: 5px;
+    font-size: .7rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.menu_table td {
+    color: var(--light-font_color);;
+    padding: 1px 3px;
+    border-width: 1.5px;
+    border-color: #511515;
+    border-style: solid;
+    background-color: #4e2e0f;
+}
+
+.menu_icon {
+    width: 10vh;
+    height: 10vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    filter: drop-shadow(black .2rem .2rem 5px);
+    cursor: pointer;
+    transition: all ease .4s;
+}
+
+.report_icon {
+    width: 5vh;
+    height: 5vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.report_icon:hover, .menu_icon:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(black .1rem .1rem 3px);
+}
+
+#flaticon_reference {
+    font-size: 12px;
+    color: #af2828;
+    margin-top: 10px;
+}
